@@ -1,0 +1,8 @@
+# Hide only DSH's terminal UI. The subprocess service remains enabled and owns PTYs.
+- id: ui-sidebar-terminal
+  disabled: true
+
+# This plugin contributes the replacement page through Better Sidebar's public API.
+- insert:
+    - id: dsh-ws-terminal
+      name: '@local/dsh-ws-terminal'
